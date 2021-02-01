@@ -6,7 +6,7 @@ pipeline {
 		CLUSTER_ZONE = "us-central1-a"
 		CREDENTIALS_ID = "sd-devops"
   	} 
-	//agent any 2
+	//agent any
   agent {
     kubernetes {
       label 'SpringBootRestApp'
