@@ -30,7 +30,7 @@ stages {
 						echo 'I am executing unit test'
 						// sh 'for i in ESBAuditClient ESBAuditLog ESBErrorTranslator TaxESB FraudESB FulfillmentESB PaymentESB ESBRadial ESBAutomatedQueueRetry AlertESB OrderReconESB;do gradle --no-daemon -p ${i} clean build;done'
 						sh 'mvn -f sample-java-app/pom.xml clean package'
-						sh 'mvn -f sample-java-app/pom.xml javadoc:javadoc'
+						sh 'mvn javadoc:javadoc -o'
 					}
 				}
 			}
