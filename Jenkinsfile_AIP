@@ -176,5 +176,8 @@ stages {
 	success {
 		echo 'I am sending a notification with success'
 	}
+	always {
+		javadoc: Publish Javadoc
+	}
    }
 }
